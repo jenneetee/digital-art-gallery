@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+                <li><a href="#artworks">Artwork</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to the Digital Art Gallery</h2>
+            <p>Explore and purchase art from artists all over the world.</p>
+        </section>
+
+        <!-- Exhibitions Section -->
+        <section id="exhibitions">
+            <h2>Current Exhibitions</h2>
+            <div id="exhibition-list">
+                <!-- Exhibited artwork will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Artwork Section -->
+        <section id="artworks">
+            <h2>Artwork Listings</h2>
+            <div id="artwork-list">
+                <!-- Artwork will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Comment Section -->
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="comment-list">
+                <!-- Comments on artwork will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payments">
+            <h2>Payments</h2>
+            <form id="payment-form">
+                <label for="payment-date">Payment Date:</label>
+                <input type="date" id="payment-date" name="payment-date">
+                <label for="payment-amount">Amount:</label>
+                <input type="number" id="payment-amount" name="payment-amount">
+                <button type="button" onclick="processPayment()">Submit Payment</button>
+            </form>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support">
+            <h2>Support</h2>
+            <form id="support-form">
+                <label for="support-ticket">Support Ticket:</label>
+                <textarea id="support-ticket" name="support-ticket" rows="4" cols="50"></textarea>
+                <button type="button" onclick="submitTicket()">Submit Ticket</button>
+            </form>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin">
+            <h2>Admin Management</h2>
+            <p>Admin functionalities will be implemented here.</p>
+        </section>
+
+        <!-- Account Section -->
+        <section id="account">
+            <h2>Account Management</h2>
+            <form id="account-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <p id="login-message"></p>
+        </section>
+
+        <!-- Logout Section -->
+        <section id="logout">
+            <h2>Logout</h2>
+            <button onclick="logout()">Logout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Art Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
