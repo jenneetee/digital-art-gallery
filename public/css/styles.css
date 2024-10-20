@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Makes main take up remaining space and push footer to the bottom */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    margin-top: 20px;
+}
+
+#artwork-list, #exhibition-list, #comment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#artwork-list div, #exhibition-list div, #comment-list div {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+#payment {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#payment-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5a9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
